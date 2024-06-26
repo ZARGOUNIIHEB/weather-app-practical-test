@@ -15,11 +15,11 @@ const descriptionElement = weatherContainer.querySelector('.description');
 searchButton.addEventListener('click', () => {
     const city = cityInput.value.trim();
     if (city) {
-        fetchWeather(city);
+        fetchingWeather(city);
     }
 });
 
-async function fetchWeather(city) {
+async function fetchingWeather(city) {
     try {
         const url = `${apiUrl}?q=${city}&appid=${apiKey}&units=metric`;
         const response = await fetch(url);
