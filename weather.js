@@ -10,7 +10,7 @@ const weatherContainer = document.getElementById('weather-container');
 const weatherIcon = weatherContainer.querySelector('img');
 const locationElement = weatherContainer.querySelector('h1');
 const temperatureElement = weatherContainer.querySelector('h2');
-const descriptionElement = weatherContainer.querySelector('.description');
+const descriptionElement = weatherContainer.querySelector('h3');
 
 searchButton.addEventListener('click', () => {
     const city = cityInput.value.trim();
